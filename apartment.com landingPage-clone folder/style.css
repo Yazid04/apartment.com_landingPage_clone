@@ -1,0 +1,1439 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar-container {
+  display: flex;
+  background-color: rgb(243, 243, 243);
+  height: 3.7rem;
+  position: relative;
+}
+.navbar-container .menu-side .translate-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  cursor: pointer;
+}
+.navbar-container .menu-side .translate-option .fa-globe {
+  margin-right: 0.7rem;
+  font-size: 1.1rem;
+}
+.navbar-container .menu-side .translate-option:hover .fa-globe, .navbar-container .menu-side .translate-option:hover h3 {
+  color: #427b01;
+}
+.navbar-container .menu-Btn {
+  display: flex;
+  width: 10rem;
+  cursor: pointer;
+  color: rgb(31, 30, 30);
+  justify-content: center;
+  align-items: center;
+}
+.navbar-container .menu-Btn:hover {
+  background-color: #4c4c4c;
+  transition: 0.02s ease-in-out;
+  color: rgb(243, 243, 243);
+}
+.navbar-container .menu-Btn .fa-bars {
+  margin-right: 1rem;
+  font-size: 2.2rem;
+}
+.navbar-container .logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 3rem;
+}
+.navbar-container .logo .logo-img {
+  height: 70%;
+}
+.navbar-container .signing-options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar-container .signing-options .signing {
+  font-size: 1.1rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-container .signing-options .signing a {
+  margin: 0 0.5rem;
+  color: rgb(31, 30, 30);
+}
+.navbar-container .signing-options a {
+  color: rgb(243, 243, 243);
+}
+.navbar-container .signing-options .signing a:hover {
+  color: #427b01;
+  transition: 0.02s ease-in-out;
+}
+.navbar-container .signing-options .add-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4c4c4c;
+  height: 100%;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.stickyPosition {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar-container .menu-side,
+.navbar-container .logo,
+.navbar-container .top-right {
+  flex: 1;
+  display: flex;
+}
+
+.navbar-container .menu-container {
+  position: absolute;
+  top: 3.75rem;
+  left: 0.1rem;
+  /*3.7rem is height of top nav bar*/
+  background-color: rgb(243, 243, 243);
+  width: 20rem;
+  transform: translateX(-101%);
+  z-index: 10;
+}
+.navbar-container .menu-container h3:hover {
+  transition: 0.02s ease-in-out;
+  background-color: #427b01;
+}
+.navbar-container .menu-container .options {
+  height: 2.7rem;
+  margin: 0 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-container .menu-container .options a {
+  font-family: "Lato", sans-serif;
+  color: rgb(31, 30, 30);
+  font-weight: 500;
+}
+.navbar-container .menu-container .options .fa-chevron-right {
+  color: #427b01;
+}
+.navbar-container .menu-container .options:hover a {
+  color: rgb(243, 243, 243);
+}
+.navbar-container .menu-container .options:hover .fa-chevron-right {
+  color: rgb(243, 243, 243);
+}
+.navbar-container .menu-container .signOptions-Mobile.options {
+  cursor: auto;
+  display: none;
+}
+.navbar-container .menu-container .sign-mobile {
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 5rem;
+  background-color: #427b01;
+  color: rgb(243, 243, 243);
+  font-size: 1rem;
+}
+.navbar-container .menu-container.menu-container.menu-opened {
+  transition: 0.02s ease-in-out;
+  transform: translateX(1%);
+}
+
+.showcase1 {
+  position: relative;
+}
+.showcase1 .showcase-img-container {
+  height: 68vh;
+}
+.showcase1 .showcase-img-container.showcase-img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 1px 1px 1px #000000, inset -1px -1px 1px #000000;
+  z-index: 1;
+}
+.showcase1 .showcase-img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.showcase1 .hero {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  height: 25rem;
+  width: 70%;
+  max-width: 70rem;
+  min-width: 1rem;
+  z-index: 5;
+  color: rgb(243, 243, 243);
+}
+.showcase1 .hero .desc {
+  height: 60%;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+.showcase1 .hero .desc h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+}
+.showcase1 .hero .desc p {
+  font-size: 1.8rem;
+}
+.showcase1 .hero .search-input-container {
+  text-align: center;
+  padding: 2rem;
+}
+.showcase1 .hero .search {
+  border: none;
+  width: 70%;
+  margin: auto;
+  height: 4.5rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  z-index: 999;
+}
+.showcase1 .hero.search[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.showcase1 .hero .searchBtn {
+  background: none;
+  border: none;
+  width: 11rem;
+  background-color: #427b01;
+  margin-left: 0.5rem;
+  padding: 1.2rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 5px;
+  color: rgb(243, 243, 243);
+}
+
+.showcase2 .header {
+  display: grid;
+  place-content: center;
+  padding: 2.5rem;
+  font-size: 2.3rem;
+}
+.showcase2 .grids-container {
+  width: 90%;
+  max-width: 1550px;
+  margin: 0rem auto;
+  display: grid;
+  gap: 1.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+}
+.showcase2 .grid {
+  color: rgb(243, 243, 243);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(88, 88, 88, 0.295) 0px 2px 8px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.showcase2 .grid:hover {
+  transition: 0.07s ease-in-out;
+  box-shadow: rgb(106, 252, 39) 0px 2px 8px 0px;
+  transform: scale(1.04);
+}
+.showcase2 .grid .img-holder {
+  flex-direction: 70%;
+}
+.showcase2 .grid .img-holder img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.showcase2 .grid .apartment-related-info {
+  flex: 30%;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  color: rgb(31, 30, 30);
+}
+
+.submit-btn {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  place-content: center;
+  border-bottom: 4px solid rgba(218, 218, 218, 0.466);
+  padding: 1.5rem;
+}
+.submit-btn .btn {
+  border: none;
+  background: none;
+  padding: 1rem;
+  width: 13rem;
+  background-color: #427b01;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(243, 243, 243);
+  border-radius: 5px;
+}
+
+.showcase3 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.showcase3 .header-showcase3-container {
+  padding: 5rem;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.showcase3 .header-showcase3-container h1,
+.showcase3 .header-showcase3-container p {
+  margin: 1rem 0;
+}
+.showcase3 .header-showcase3-container h1 {
+  font-size: 3rem;
+}
+.showcase3 .header-showcase3-container p {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+}
+.showcase3 .grids-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 380px);
+}
+.showcase3 .grids-container .grid {
+  height: 100%;
+  width: 100%;
+}
+.showcase3 .grids-container .grid.img-grid img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.showcase3 .grids-container .grid.info-grid {
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container .header-1,
+.showcase3 .grids-container .grid.info-grid .inner-container .info,
+.showcase3 .grids-container .grid.info-grid .inner-container .findOutMore {
+  margin: 10px 0;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container .header-1 {
+  font-size: 2.5rem;
+  font-family: "Lato", sans-serif;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container .info {
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container li {
+  margin-top: 40px;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container li .findOutMore {
+  font-size: 1.6rem;
+  color: #0576a7;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container li .findOutMore:hover {
+  border-bottom: 3px solid #0576a7;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption {
+  display: flex;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer {
+  background-color: rgb(31, 30, 30);
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: flex;
+  color: rgb(243, 243, 243);
+}
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon {
+  flex: 20%;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon .fa-apple,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon .fa-google-play,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon .fa-apple,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon .fa-google-play {
+  height: 100%;
+  width: 100%;
+  font-size: 2.2rem;
+}
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .text,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .text {
+  flex: 80%;
+  font-size: 1.2rem;
+}
+
+.housesTypesOptions {
+  padding: 5rem;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.housesTypesOptions h2 {
+  width: 75%;
+  margin: auto;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  font-family: "Lato", sans-serif;
+}
+.housesTypesOptions h2 a {
+  text-decoration: underline;
+}
+
+.footer {
+  height: 37rem;
+  background-color: #f5f5f5;
+  border-top: 1px solid #cacaca;
+  padding: 5rem;
+}
+.footer .footerContainer {
+  display: flex;
+  height: 100%;
+}
+.footer .footerContainer .social {
+  flex: 25%;
+  color: rgb(31, 30, 30);
+  text-align: end;
+}
+.footer .footerContainer .social .child {
+  margin-bottom: 25px;
+}
+.footer .footerContainer .social .child:nth-child(2) {
+  font-size: 1.3rem;
+}
+.footer .footerContainer .social .equalHousingLink a {
+  color: rgb(31, 30, 30);
+  font-size: 1.2rem;
+}
+.footer .footerContainer .social .icons {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-left: auto;
+}
+.footer .footerContainer .social .icons .fa-brands,
+.footer .footerContainer .social .icons .fa-solid {
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: rgb(94, 94, 94);
+  color: rgb(243, 243, 243);
+  height: 2.7rem;
+  width: 2.7rem;
+  display: grid;
+  place-content: center;
+  border-radius: 20px;
+}
+.footer .footerContainer .social .icons .fa-brands:hover,
+.footer .footerContainer .social .icons .fa-solid:hover {
+  background-color: rgb(49, 49, 49);
+}
+.footer .footerContainer .linksContainer {
+  display: none;
+  flex: 75%;
+  margin-left: 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(1, 100%);
+}
+.footer .footerContainer .linksContainer .col .child-link {
+  margin: 0.9rem 0;
+}
+.footer .footerContainer .linksContainer .col .child-link a {
+  color: rgb(133, 133, 133);
+}
+.footer .footerContainer .linksContainer .col .child-link a:hover {
+  color: #427b01;
+}
+.footer .footerContainer .linksContainer .col h2 {
+  font-weight: 100;
+  font-size: 1rem;
+  color: rgb(66, 66, 66);
+}
+
+.navbar-container,
+.showcase1,
+.showcase2,
+.showcase3,
+.housesTypesOptions,
+.footer {
+  max-width: 2000px;
+  margin: auto;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1030px) {
+  .grids-container {
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  .grids-container {
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    padding: 1rem 1.5rem;
+  }
+}
+/*lg screen sizes grid-ui*/
+@media (min-width: 1001px) {
+  .grids-container {
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(1, 400px);
+    justify-content: center;
+  }
+  .grids-container .img-holder {
+    flex: 55%;
+  }
+  .grids-container .apartment-related-info {
+    flex: 45%;
+  }
+}
+/*mobile sizes*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar-container {
+    height: 2rem;
+  }
+  .navbar-container .menu-side {
+    display: grid;
+    place-content: center;
+  }
+  .navbar-container .menu-side .menu-Btn {
+    width: 2.5rem;
+    height: 100%;
+  }
+  .navbar-container .menu-side .menu-Btn:hover {
+    background: none;
+    color: rgb(31, 30, 30);
+  }
+  .navbar-container .menu-side .menu-Btn .fa-bars {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  .navbar-container .menu-side .menu-Btn h3 {
+    display: none;
+  }
+  .navbar-container .menu-side .translate-option {
+    display: none;
+  }
+  .navbar-container .signing-options {
+    display: none;
+  }
+  .navbar-container .menu-side {
+    flex: 5%;
+  }
+  .navbar-container .logo {
+    justify-content: center;
+    flex: 95%;
+  }
+  .navbar-container .menu-container {
+    top: 2.2rem;
+    left: 0;
+    width: 10rem;
+  }
+  .navbar-container .menu-container .options {
+    height: 1.5rem;
+    margin: 0 0.5rem;
+  }
+  .navbar-container .menu-container .options .fa-chevron-right,
+.navbar-container .menu-container .options a {
+    font-size: 0.6rem;
+  }
+  .navbar-container .menu-container .signOptions-Mobile.options {
+    display: flex;
+  }
+  .navbar-container .menu-container .sign-mobile {
+    height: 90%;
+    width: 3.5rem;
+    font-size: 0.6rem;
+    display: grid;
+    place-content: center;
+    border-radius: 2px;
+  }
+  .showcase1 .hero {
+    width: 90%;
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .showcase1 .hero .desc h2,
+.showcase1 .hero .desc p {
+    padding: 5px;
+  }
+  .showcase1 .hero .desc h2 {
+    font-size: 1.5rem;
+    width: 72%;
+    margin: auto;
+  }
+  .showcase1 .hero .desc p {
+    font-size: 1rem;
+    width: 70%;
+    margin: auto;
+  }
+  .showcase1 .hero .search-input-container {
+    padding: 0;
+  }
+  .showcase1 .hero .search-input-container .search-input {
+    display: flex;
+    height: 2rem;
+    width: 70%;
+    margin: auto;
+  }
+  .showcase1 .hero .search-input-container .search-input .search {
+    flex: 70%;
+    height: 100%;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+  }
+  .showcase1 .hero .search-input-container .search-input .searchBtn {
+    flex: 30%;
+    height: 100%;
+    font-size: 0.7rem;
+    display: grid;
+    padding: 0;
+    place-content: center;
+  }
+  .showcase2 .header {
+    padding: 1rem 2rem;
+    background-color: rgb(243, 243, 243);
+    font-size: 0.9rem;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+  .showcase2 .grids-container {
+    grid-template-columns: repeat(1, 80%);
+    grid-template-rows: repeat(4, 330px);
+    padding: 1rem 1.5rem;
+  }
+  .showcase2 .grids-container .img-holder {
+    flex: 70%;
+  }
+  .showcase2 .grids-container .apartment-related-info {
+    flex: 30%;
+    padding: 5px;
+  }
+  .showcase2 .submit-btn .btn {
+    padding: 0.5rem;
+    width: 10rem;
+    font-size: 1rem;
+  }
+  .showcase3 .header-showcase3-container {
+    padding: 1rem;
+  }
+  .showcase3 .header-showcase3-container h1,
+.showcase3 .header-showcase3-container p {
+    margin: 0.7rem 0;
+  }
+  .showcase3 .header-showcase3-container h1 {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .showcase3 .header-showcase3-container p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    letter-spacing: 0px;
+  }
+  .showcase3 .grids-container {
+    width: 100%;
+    gap: 0;
+    padding: 0;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(6, 200px);
+  }
+  .showcase3 .grids-container .grid {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container {
+    text-align: center;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .header-1,
+.showcase3 .grids-container .grid.info-grid .inner-container .info,
+.showcase3 .grids-container .grid.info-grid .inner-container .findOutMore {
+    margin: 5px 0;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .header-1 {
+    font-size: 1.1rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .info {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li {
+    background-color: #427b01;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li:hover {
+    transition: 0.02s ease-in-out;
+    background-color: #427b01;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li .findOutMore {
+    color: rgb(243, 243, 243);
+    font-size: 1rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li .findOutMore:hover {
+    border: none;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer {
+    padding: 5px;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon {
+    flex: 20%;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon .fa-apple,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon .fa-google-play,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon .fa-apple,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon .fa-google-play {
+    font-size: 1rem;
+    display: grid;
+    place-content: center;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .text,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .text {
+    flex: 80%;
+    font-size: 0.6rem;
+  }
+  .housesTypesOptions {
+    padding: 2.5rem;
+  }
+  .housesTypesOptions h2 {
+    width: 90%;
+    margin: auto;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+  .footer {
+    padding: 0;
+  }
+  .footer .footerContainer {
+    align-items: center;
+    width: 100%;
+  }
+  .footer .footerContainer .linksContainer {
+    display: none;
+  }
+  .footer .footerContainer .social {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .footer .footerContainer .social .img-holder {
+    width: 100%;
+  }
+  .footer .footerContainer .social .img-holder img {
+    width: 100%;
+    height: 100%;
+    font-size: 0.5rem;
+  }
+  .footer .footerContainer .social .icons {
+    width: 100%;
+  }
+}
+/*ipads & tablets sizes*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar-container {
+    height: 2.5rem;
+  }
+  .navbar-container .menu-side {
+    display: grid;
+    place-content: center;
+  }
+  .navbar-container .menu-side .menu-Btn {
+    width: 2.5rem;
+    height: 100%;
+  }
+  .navbar-container .menu-side .menu-Btn:hover {
+    background: none;
+    color: rgb(31, 30, 30);
+  }
+  .navbar-container .menu-side .menu-Btn .fa-bars {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .navbar-container .menu-side .menu-Btn h3 {
+    display: none;
+  }
+  .navbar-container .menu-side .translate-option {
+    display: none;
+  }
+  .navbar-container .signing-options {
+    display: none;
+  }
+  .navbar-container .menu-side {
+    flex: 5%;
+  }
+  .navbar-container .logo {
+    justify-content: center;
+    flex: 95%;
+  }
+  .navbar-container .menu-container {
+    top: 2.7rem;
+    left: 0;
+    width: 11rem;
+  }
+  .navbar-container .menu-container .options {
+    height: 2rem;
+    margin: 0 0.5rem;
+  }
+  .navbar-container .menu-container .options .fa-chevron-right,
+.navbar-container .menu-container .options a {
+    font-size: 0.8rem;
+  }
+  .navbar-container .menu-container .signOptions-Mobile.options {
+    display: flex;
+  }
+  .navbar-container .menu-container .sign-mobile {
+    height: 90%;
+    width: 4rem;
+    font-size: 0.6rem;
+    display: grid;
+    place-content: center;
+    border-radius: 2px;
+  }
+  .showcase1 .hero {
+    width: 90%;
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .showcase1 .hero .desc h2,
+.showcase1 .hero .desc p {
+    padding: 5px;
+  }
+  .showcase1 .hero .desc h2 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .showcase1 .hero .desc p {
+    font-size: 1.3rem;
+    width: 80%;
+    margin: auto;
+  }
+  .showcase1 .hero .search-input-container {
+    padding: 0;
+  }
+  .showcase1 .hero .search-input-container .search-input {
+    display: flex;
+    height: 2.5rem;
+    width: 70%;
+    margin: auto;
+  }
+  .showcase1 .hero .search-input-container .search-input .search {
+    flex: 70%;
+    height: 100%;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  .showcase1 .hero .search-input-container .search-input .searchBtn {
+    flex: 30%;
+    height: 100%;
+    font-size: 1rem;
+    padding: 0;
+    display: grid;
+    place-content: center;
+  }
+  .showcase2 .header {
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+  .showcase2 .grids-container {
+    grid-template-columns: repeat(1, 70%);
+    grid-template-rows: repeat(4, 450px);
+    padding: 1rem 1.5rem;
+  }
+  .showcase2 .grids-container .img-holder {
+    flex: 70%;
+  }
+  .showcase2 .grids-container .img-holder img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .showcase2 .grids-container .apartment-related-info {
+    flex: 30%;
+    padding: 5px 0;
+  }
+  .showcase2 .submit-btn .btn {
+    padding: 1rem;
+    width: 10rem;
+    font-size: 1.3rem;
+  }
+  .showcase3 .header-showcase3-container {
+    padding: 1rem;
+  }
+  .showcase3 .header-showcase3-container h1,
+.showcase3 .header-showcase3-container p {
+    margin: 0.7rem 0;
+  }
+  .showcase3 .header-showcase3-container h1 {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  .showcase3 .header-showcase3-container p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    letter-spacing: 0px;
+  }
+  .showcase3 .grids-container {
+    width: 75%;
+    gap: 0;
+    padding: 0;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(6, 250px);
+  }
+  .showcase3 .grids-container .grid {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .showcase3 .grids-container .grid.info-grid {
+    padding: 0rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container {
+    text-align: center;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .header-1,
+.showcase3 .grids-container .grid.info-grid .inner-container .info,
+.showcase3 .grids-container .grid.info-grid .inner-container .findOutMore {
+    margin: 8px 0;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .header-1 {
+    font-size: 1.7rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .info {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li {
+    background-color: #427b01;
+    width: 65%;
+    margin: auto;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li:hover {
+    transition: 0.02s ease-in-out;
+    background-color: #427b01;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li .findOutMore {
+    color: rgb(243, 243, 243);
+    font-size: 1.2rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li .findOutMore:hover {
+    border: none;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption {
+    justify-content: center;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer {
+    padding: 0.7rem;
+    width: 11rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon {
+    flex: 20%;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon .fa-apple,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon .fa-google-play,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon .fa-apple,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon .fa-google-play {
+    font-size: 1.2rem;
+    display: grid;
+    place-content: center;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .text,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .text {
+    flex: 80%;
+    font-size: 0.8rem;
+  }
+  .housesTypesOptions {
+    padding: 2.5rem;
+  }
+  .housesTypesOptions h2 {
+    width: 80%;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+  .footer {
+    padding: 0;
+  }
+  .footer .footerContainer {
+    align-items: center;
+    width: 70%;
+    margin: auto;
+  }
+  .footer .footerContainer .linksContainer {
+    display: none;
+  }
+  .footer .footerContainer .social {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .footer .footerContainer .social .img-holder {
+    width: 100%;
+  }
+  .footer .footerContainer .social .img-holder img {
+    width: 65%;
+    height: 65%;
+  }
+  .footer .footerContainer .social .icons {
+    width: 65%;
+    margin: auto;
+  }
+  .footer .footerContainer .social .icons .fa-brands,
+.footer .footerContainer .social .icons .fa-solid {
+    margin: 0 5px;
+  }
+  .footer .footerContainer .social .equalHousingLink {
+    margin: 1.5rem 0;
+  }
+}
+/*sm to md screen size laptops*/
+@media screen and (min-width: 769px) and (max-width: 1230px) {
+  .navbar-container {
+    height: 3.5rem;
+  }
+  .navbar-container .menu-side {
+    display: grid;
+    place-content: center;
+  }
+  .navbar-container .menu-side .menu-Btn {
+    width: 4rem;
+    height: 100%;
+  }
+  .navbar-container .menu-side .menu-Btn:hover {
+    background: none;
+    color: rgb(31, 30, 30);
+  }
+  .navbar-container .menu-side .menu-Btn .fa-bars {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .navbar-container .menu-side .menu-Btn h3 {
+    display: none;
+  }
+  .navbar-container .menu-side .translate-option {
+    display: none;
+  }
+  .navbar-container .signing-options {
+    display: none;
+  }
+  .navbar-container .menu-side {
+    flex: 5%;
+  }
+  .navbar-container .logo {
+    justify-content: center;
+    flex: 95%;
+  }
+  .navbar-container .menu-container {
+    top: 3.7rem;
+    left: 0;
+    width: 16rem;
+  }
+  .navbar-container .menu-container .options {
+    height: 2.5rem;
+    margin: 0 0.5rem;
+  }
+  .navbar-container .menu-container .options .fa-chevron-right,
+.navbar-container .menu-container .options a {
+    font-size: 1.2rem;
+  }
+  .navbar-container .menu-container .signOptions-Mobile.options {
+    display: flex;
+  }
+  .navbar-container .menu-container .sign-mobile {
+    height: 90%;
+    width: 6rem;
+    font-size: 1rem;
+    display: grid;
+    place-content: center;
+    border-radius: 4px;
+  }
+  .showcase1 .hero {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .showcase1 .hero .desc h2,
+.showcase1 .hero .desc p,
+.showcase1 .hero .desc .search {
+    padding: 0px;
+    margin: 1rem 0;
+  }
+  .showcase1 .hero .desc h2 {
+    font-size: 3.2rem;
+    width: 90%;
+    margin: auto;
+  }
+  .showcase1 .hero .desc p {
+    font-size: 1.7rem;
+    width: 80%;
+    margin: auto;
+  }
+  .showcase1 .hero .search-input-container {
+    padding: 0;
+  }
+  .showcase1 .hero .search-input-container .search-input {
+    display: flex;
+    height: 3rem;
+    width: 70%;
+    margin: 1rem auto;
+  }
+  .showcase1 .hero .search-input-container .search-input .search {
+    flex: 70%;
+    height: 100%;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  .showcase1 .hero .search-input-container .search-input .searchBtn {
+    flex: 30%;
+    height: 100%;
+    font-size: 1.3rem;
+    display: grid;
+    padding: 0;
+    place-content: center;
+  }
+  .showcase2 {
+    width: 85%;
+    margin: auto;
+    height: 82rem;
+  }
+  .showcase2 .header {
+    padding: 3rem;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+  .showcase2 .grids-container {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 450px);
+  }
+  .showcase2 .grids-container .img-holder {
+    flex: 70%;
+  }
+  .showcase2 .grids-container .img-holder img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .showcase2 .grids-container .apartment-related-info {
+    flex: 30%;
+    padding: 5px 0;
+  }
+  .showcase2 .submit-btn {
+    margin: 2rem auto;
+  }
+  .showcase2 .submit-btn .btn {
+    padding: 1rem;
+    width: 10rem;
+    font-size: 1.3rem;
+  }
+  .showcase3 {
+    height: 60rem;
+  }
+  .showcase3 .header-showcase3-container {
+    padding: 1rem;
+    width: 85%;
+    margin: auto;
+  }
+  .showcase3 .header-showcase3-container h1,
+.showcase3 .header-showcase3-container p {
+    margin: 0.7rem 0;
+  }
+  .showcase3 .header-showcase3-container h1 {
+    font-size: 2.2rem;
+    padding: 0;
+  }
+  .showcase3 .header-showcase3-container p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+  }
+  .showcase3 .grids-container {
+    width: 85%;
+    gap: 0;
+    padding: 0;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(6, 250px);
+  }
+  .showcase3 .grids-container .grid {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .showcase3 .grids-container .grid.info-grid {
+    padding: 0rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container {
+    text-align: center;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .header-1,
+.showcase3 .grids-container .grid.info-grid .inner-container .info,
+.showcase3 .grids-container .grid.info-grid .inner-container .findOutMore {
+    margin: 8px 0;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .header-1 {
+    font-size: 1.7rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .info {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li {
+    background-color: #427b01;
+    width: 65%;
+    margin: auto;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li:hover {
+    transition: 0.02s ease-in-out;
+    background-color: #427b01;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li .findOutMore {
+    color: rgb(243, 243, 243);
+    font-size: 1.2rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container li .findOutMore:hover {
+    border: none;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption {
+    justify-content: center;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer {
+    padding: 0.7rem;
+    width: 10rem;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon {
+    flex: 20%;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon .fa-apple,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .AppStoreIcon .fa-google-play,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon .fa-apple,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .AppStoreIcon .fa-google-play {
+    font-size: 1.2rem;
+    display: grid;
+    place-content: center;
+  }
+  .showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .iosOptionContainer .text,
+.showcase3 .grids-container .grid.info-grid .inner-container .downloadAppOption .androidOptionContainer .text {
+    flex: 80%;
+    font-size: 0.8rem;
+  }
+  .housesTypesOptions {
+    padding: 2.5rem;
+  }
+  .housesTypesOptions h2 {
+    width: 90%;
+    margin: auto;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+  .footer {
+    padding: 0;
+  }
+  .footer .footerContainer {
+    align-items: center;
+    width: 85%;
+    margin: auto;
+  }
+  .footer .footerContainer .linksContainer {
+    display: none;
+  }
+  .footer .footerContainer .social {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .footer .footerContainer .social .img-holder {
+    width: 100%;
+  }
+  .footer .footerContainer .social .img-holder img {
+    width: 65%;
+    height: 65%;
+  }
+  .footer .footerContainer .social .icons {
+    width: 65%;
+    margin: auto;
+  }
+  .footer .footerContainer .social .icons .fa-brands,
+.footer .footerContainer .social .icons .fa-solid {
+    margin: 0 5px;
+  }
+  .footer .footerContainer .social .equalHousingLink {
+    margin: 1.5rem 0;
+  }
+}
+@media screen and (min-width: 1231px) and (max-width: 1899px) {
+  .footer {
+    padding: 0;
+  }
+  .footer .footerContainer {
+    align-items: center;
+    width: 70%;
+    margin: auto;
+  }
+  .footer .footerContainer .linksContainer {
+    display: none;
+  }
+  .footer .footerContainer .social {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .footer .footerContainer .social .img-holder {
+    width: 100%;
+  }
+  .footer .footerContainer .social .img-holder img {
+    width: 45%;
+    height: 45%;
+  }
+  .footer .footerContainer .social .icons {
+    width: 50%;
+    margin: auto;
+  }
+  .footer .footerContainer .social .icons .fa-brands,
+.footer .footerContainer .social .icons .fa-solid {
+    margin: 0 5px;
+  }
+  .footer .footerContainer .social .equalHousingLink {
+    margin: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 9999px) and (min-width: 1900px) {
+  .footer .footerContainer {
+    align-items: center;
+    width: 85%;
+    margin: auto;
+  }
+  .footer .footerContainer .linksContainer {
+    display: none;
+  }
+  .footer .footerContainer .social {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+  .footer .footerContainer .social .img-holder {
+    width: 100%;
+  }
+  .footer .footerContainer .social .img-holder img {
+    width: 65%;
+    height: 65%;
+  }
+  .footer .footerContainer .social .icons {
+    width: 65%;
+    margin: auto;
+  }
+  .footer .footerContainer .social .icons .fa-brands,
+.footer .footerContainer .social .icons .fa-solid {
+    margin: 0 5px;
+  }
+  .footer .footerContainer .social .equalHousingLink {
+    margin: 1.5rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */

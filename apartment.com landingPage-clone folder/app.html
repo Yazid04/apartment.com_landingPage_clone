@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apartements.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="navbar-container stickyPosition">
+        <main class="menu-container">
+            <h3>
+                <li class="options"><a href="#">Renter Tools</a><i class="fa-solid fa-chevron-right"></i></li>
+            </h3>
+            <h3>
+                <li class="options"><a href="#">Manage Rentals</a></li>
+            </h3>
+            <h3>
+                <li class="options"><a href="#">Apartments For Rents</a><i class="fa-solid fa-chevron-right"></i></li>
+            </h3>
+            <h3>
+                <li class="options"><a href="#">Homes For Rent</a><i class="fa-solid fa-chevron-right"></i></li>
+            </h3>
+            <h3>
+                <li class="options"><a href="#">Condos For Rent</a><i class="fa-solid fa-chevron-right"></i></li>
+            </h3>
+            <h3>
+                <li class="options"><a href="#">Townhomes For Rent</a><i class="fa-solid fa-chevron-right"></i></li>
+            </h3>
+            <h3>
+                <li class="options"><a href="#">Help Center</a></li>
+            </h3>
+            <section class="signOptions-Mobile options">
+                <button class="sign-mobile">Sign In</button>
+                <button class="sign-mobile">Sign Up</button>
+            </section>
+        </main>
+
+        <main class="menu-side">
+            <div class="menu-Btn">
+                <span><i class="fa-solid fa-bars"></i></span>
+                <h3>Menu</h3>
+            </div>
+            <div class="translate-option">
+                <i class="fa-solid fa-globe"></i>
+                <h3>English</h3>
+            </div>
+        </main>
+        <main class="logo">
+            <img src="IMGS/logo.jpg" alt="website logo" class="logo-img">
+        </main>
+        <main class="signing-options">
+            <div class="signing">
+                <a href="#">Manage Rentals</a>
+                <a href="#">Sign in</a>
+                <span> / </span>
+                <a href="#">Sign Up</a>
+            </div>
+            <a href="#" class="add-option">Add a Property</a>
+        </main>
+    </div>
+    <div class="showcase1">
+        <main class="showcase-img-container">
+            <img src="IMGS/showcase1.jpg" alt="showcase1-img">
+        </main>
+        <main class="hero">
+            <header class="desc">
+                <h2>Discover Your New Home</h2>
+                <p>Helping 100 million renters find their perfect fit.</p>
+            </header>
+            <section class="search-input-container">
+                <main class="search-input">
+                    <input type="search" class="search" placeholder="Chicago, IL"
+                        onfocus="this.placeholder = 'Search by Location or Point of Interest'"
+                        onblur="this.placeholder = 'Chicago, IL'">
+                    <button type="button" class="searchBtn">Search</button>
+                </main>
+            </section>
+        </main>
+    </div>
+    <div class="showcase2">
+        <header class="header">
+            <h3>Explore Rentals in Chicago, IL</h3>
+        </header>
+        <section class="grids-container">
+            <div class="grid">
+                <div class="img-holder">
+                    <img src="IMGS/showcase2-img1.jpg" alt="A demo for apartment">
+                </div>
+                <div class="apartment-related-info">
+                    <h3>The Residence at NewCity</h3>
+                    <p>1457 N Halsted St,</p>
+                    <p>Chicago, IL 60642</p>
+                    <p>Studio -2 Beds | $2,340 - $5,308</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="img-holder">
+                    <img src="IMGS/showcase2-img2.jpg" alt="A demo for apartment">
+                </div>
+                <div class="apartment-related-info">
+                    <h3>Elevate</h3>
+                    <p>930 W Altgeld St,</p>
+                    <p>Chicago, IL 60614</p>
+                    <p>Studio - 3 Beds | $2,315 - $14,520</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="img-holder">
+
+                    <img src="IMGS/showcase2-img3.jpg" alt="A demo for apartment">
+                </div>
+                <div class="apartment-related-info">
+                    <h3>Regents Park</h3>
+                    <p>5035 S East End Ave,</p>
+                    <p>Chicago, IL 60615</p>
+                    <p>Studio - 4 Beds | $1,750 - $4,456</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="img-holder">
+                    <img src="IMGS/showcase2-img4.jpg" alt="A demo for apartment">
+                </div>
+                <div class="apartment-related-info">
+                    <h3 class="info">The Pavillian</h3>
+                    <p class="info">5411 NE NEast River Rd,</p>
+                    <p class="info">Chicago, IL 60656</p>
+                    <p class="info">Studio - 4 Beds | $1,245 - $3,145</p>
+                </div>
+            </div>
+        </section>
+        <div class="submit-btn">
+            <button class="btn">View More</button>
+        </div>
+    </div>
+    <div class="showcase3 pt1">
+        <main class="header-showcase3-container">
+            <h1 class="header-showcase3">The Most Rental Listings</h1>
+            <p>Choose from over 1 million apartments, houses, condos, and townhomes for rent.</p>
+        </main>
+        <section class="grids-container">
+            <div class="grid info-grid">
+                <div class="inner-container">
+                    <header class="header-1">
+                        Renting Made Simple
+                    </header>
+                    <p class="info">
+                        Browse the highest quality listings, apply online, sign your lease, and even pay your rent from
+                        any
+                        device.
+                    </p>
+                    <li><a href="#" class="findOutMore">Find Out More</a></li>
+                </div>
+            </div>
+            <div class="grid img-grid">
+                <img src="IMGS/showcase3-IMG1.jpg" alt="img 1">
+            </div>
+            <div class="grid img-grid">
+                <img src="IMGS/showcase3-IMG2.jpg" alt="img 1">
+            </div>
+            <div class="grid info-grid">
+                <div class="inner-container">
+                    <header class="header-1">
+                        Tips for Renters
+                    </header>
+                    <p class="info">
+                        Find answers to all of your renting questions with the best renter’s guide in the galaxy.
+                    </p>
+                    <li><a href="#" class="findOutMore">Browse Articles</a></li>
+                </div>
+            </div>
+            <div class="grid info-grid">
+                <div class="inner-container">
+                    <header class="header-1">
+                        Take Us With You
+                    </header>
+                    <p class="info">
+                        Keep Apartments.com in the palm of your hand throughout your rental journey.
+                    </p>
+                    <main class="downloadAppOption">
+                        <div class="iosOptionContainer">
+                            <div class="AppStoreIcon"><i class="fa-brands fa-apple"></i></div>
+                            <div class="text">Download on the App Store</div>
+                        </div>
+                        <div class="androidOptionContainer">
+                            <div class="AppStoreIcon"><i class="fa-brands fa-google-play"></i></div>
+                            <div class="text">GET IT ON Google Play</div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="grid img-grid">
+                <img src="IMGS/showcase3-IMG3.jpg" alt="img 1">
+            </div>
+        </section>
+    </div>
+    <div class="showcase3 pt2">
+        <main class="header-showcase3-container">
+            <h1 class="header-showcase3">The Perfect Place to Manage Your Property</h1>
+            <p>Work with the best suite of property management tools on the market.</p>
+        </main>
+        <section class="grids-container">
+            <div class="grid info-grid">
+                <div class="inner-container">
+                    <header class="header-1">
+                        Advertise Your Rental
+                    </header>
+                    <p class="info">
+                        Connect with more than 75 million renters looking for new homes using our comprehensive
+                        marketing platform.
+                    </p>
+                    <li><a href="#" class="findOutMore">List Your Property</a></li>
+                </div>
+            </div>
+            <div class="grid img-grid">
+                <img src="IMGS/showcase3-PT2-IMG1.jpg" alt="img 1">
+            </div>
+            <div class="grid img-grid">
+                <img src="IMGS/showcase3-PT2-IMG2.jpg" alt="img 1">
+            </div>
+            <div class="grid info-grid">
+                <div class="inner-container">
+                    <header class="header-1">
+                        Lease 100% Online
+                    </header>
+                    <p class="info">
+                        Lease 100% Online
+                        Accept applications, process rent payments online, and sign digital leases all powered on a
+                        single platform. </p>
+                    <li><a href="#" class="findOutMore">Manage Your Property</a></li>
+                </div>
+            </div>
+            <div class="grid info-grid">
+                <div class="inner-container">
+                    <header class="header-1">
+                        Property Manager Resources
+                    </header>
+                    <p class="info">
+                        Stay up-to-date using our tips and guides on rent payments, leasing, management solutions, and
+                        more.
+                    </p>
+                    <li><a href="#" class="findOutMore">Stay Informed</a></li>
+                </div>
+            </div>
+            <div class="grid img-grid">
+                <img src="IMGS/showcase3-PT2-IMG3.jpg" alt="img 1">
+            </div>
+        </section>
+    </div>
+    <div class="housesTypesOptions">
+        <h2>Search over 1 million listings including <a href="#">apartments</a>, <a href="#">houses</a>, <a
+                href="#">condos</a>, and <a href="#">townhomes</a> available for rent.
+            You’ll find your next home, in any style you prefer.</h2>
+    </div>
+    <div class="footer">
+        <main class="footerContainer">
+            <div class="social">
+                <div class="img-holder child">
+                    <img src="IMGS/logo.jpg" alt="homePage-logo">
+                </div>
+                <p class="child text">© 2022 CoStar Group, Inc.</p>
+                <div class="icons child">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-pinterest"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                    <li><i class="fa-solid fa-blog"></i></li>
+                </div>
+                <li class="equalHousingLink child"><a href="#"><i class="fa-solid fa-house"></i> Equal Housing
+                        Opportunity</a></li>
+            </div>
+            <div class="linksContainer">
+                <div class="col col-1">
+                    <h2>ADVERTISERS</h2>
+                    <li class="child-link"><a href="#">Advertise</a></li>
+                    <li class="child-link"><a href="#">Add a Property</a></li>
+                    <li class="child-link"><a href="#">Digital Feeds Program</a></li>
+                    <li class="child-link"><a href="#">Customer Portal</a></li>
+                    <li class="child-link"><a href="#">Community Voice</a></li>
+                    <li class="child-link"><a href="#">Rental Manager</a></li>
+                    <li class="child-link"><a href="#">Rental Manager Resources</a></li>
+                </div>
+                <div class="col col-2">
+                    <h2>THE MARKETPLACE</h2>
+                    <li class="child-link"><a href="#">Apartamentos.com</a></li>
+                    <li class="child-link"><a href="#">ApartmentFinder.com</a></li>
+                    <li class="child-link"><a href="#">ApartmentHomeLiving.com</a></li>
+                    <li class="child-link"><a href="#">WestsideRentals.com</a></li>
+                    <li class="child-link"><a href="#">LoopNet.com</a></li>
+                    <li class="child-link"><a href="#">Cityfeet.com</a></li>
+                    <li class="child-link"><a href="#">Showcase.com</a></li>
+                    <li class="child-link"><a href="#">Realla.co.uk</a></li>
+                    <li class="child-link"><a href="#">BizzyBuySell.com</a></li>
+                    <li class="child-link"><a href="#">LandsofAmerica.com</a></li>
+                    <li class="child-link"><a href="#">Buy or Sell your Home</a></li>
+                </div>
+                <div class="col col-3">
+                    <h2>NEIGHBORHOODS</h2>
+                    <li class="child-link"><a href="#">Las Colinas</a></li>
+                    <li class="child-link"><a href="#">Westwood</a></li>
+                    <li class="child-link"><a href="#">Federal Hill MD</a></li>
+                    <li class="child-link"><a href="#">East Village</a></li>
+                    <li class="child-link"><a href="#">Hyde Park</a></li>
+                    <li class="child-link"><a href="#">Uptown Minneapolis</a></li>
+                    <li class="child-link"><a href="#">Downtown Austin</a></li>
+                    <li class="child-link"><a href="#">Lincoln Park</a></li>
+                    <li class="child-link"><a href="#">Downtown Houston</a></li>
+                    <li class="child-link"><a href="#">Downtown Dallas</a></li>
+                </div>
+                <div class="col col-4">
+                    <h2>FEATURED CITIES</h2>
+                    <li class="child-link"><a href="#">Advertise</a></li>
+                    <li class="child-link"><a href="#">Riverside, CA</a></li>
+                    <li class="child-link"><a href="#">College Station, TX</a></li>
+                    <li class="child-link"><a href="#">Bellevue, WA</a></li>
+                    <li class="child-link"><a href="#">Madison, WI</a></li>
+                    <li class="child-link"><a href="#">Mountain View, CA</a></li>
+                    <li class="child-link"><a href="#">Oak Park, IL</a></li>
+                    <li class="child-link"><a href="#">Arlington, TX</a></li>
+                    <li class="child-link"><a href="#">Lincoln, NE</a></li>
+                    <li class="child-link"><a href="#">Lexington, KY</a></li>
+                    <li class="child-link"><a href="#">Georgetown, TX</a></li>
+                    <li class="child-link"><a href="#">Greenwood, IL</a></li>
+                </div>
+                <div class="col col-5">
+                    <h2>ABOUT US</h2>
+                    <li class="child-link"><a href="#">About Us</a></li>
+                    <li class="child-link"><a href="#">Careers</a></li>
+                    <li class="child-link"><a href="#">Contact Us</li>
+                    <li class="child-link"><a href="#">Legal Notices</a></li>
+                    <li class="child-link"><a href="#">CA: Do Not Sell My Personal Info</a></li>
+                    <li class="child-link"><a href="#">Equal Housing</a></li>
+                    <li class="child-link"><a href="#">Accessibility</a></li>
+                    <li class="child-link"><a href="#">Rent Calculator</a></li>
+                    <li class="child-link"><a href="#">Blog</a></li>
+                    <li class="child-link"><a href="#">Avoid Scams</a></li>
+                    <li class="child-link"><a href="#">Sitemap</a></li>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
